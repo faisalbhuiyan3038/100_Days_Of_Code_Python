@@ -11,6 +11,6 @@ Python uses the Mersenne Twister pseudorandom number generator to generate rando
 
 To use random module, you need to import it first.
 
-'''python
+```python
 import random
-'''
+```
