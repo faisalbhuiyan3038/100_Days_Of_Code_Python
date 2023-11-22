@@ -1,8 +1,11 @@
 # Notes from this course categorized by Day
 
+P.S - You can use the Thonny IDE to visualize each step a python code takes while executing. Useful for debugging.
+
 <h2>Table of Contents</h2>
 
 - [Day 4](#day4)
+- [Day 5](#day5)
 
 
 <a name="day4"></a>
@@ -70,4 +73,62 @@ fruits = ["Strawberries","Nectarines"]
 vegetables = ["spinach","cabbage"]
 
 dirty_dozen = [fruits,vegetables]
+```
+
+
+<a name="day5"></a>
+<h3>Day 5</h3>
+```python
+for fruit in fruits:
+```
+A loop executes a block of statement multiple times.
+
+Learned that python does not support increment operators like i++. Instead you gotta do this:
+```python
+count += 1
+```
+
+The python round function is used to round a given number to a whole number, or to a specified number of decimal places.
+```python
+rounded_num = round(25.4)
+#rounds to whole number
+rounded_num = round(25.4235,3)
+#rounds to 3 dp
+```
+
+f strings can combine string and variables while printing.
+```python
+print(f"This will print {num}")
+```
+
+for loops can be run in a range of numbers in python.
+```python
+for number in range(1,10):
+    print(number)
+#includes 1 and 10
+```
+
+you can also make for loops skip a number of steps for every interval.
+```python
+for number in range(1,10,3):
+    print(number)
+#first step is 1 then 4 and so on
+```
+
+To convert a list to a string, we can use str.join function:
+```python
+my_list = ['a','b','c']
+my_string = ''.join(my_list)
+```
+
+To pick a random item from a list, we can use random module:
+```python
+my_list = ['a','v','d']
+random_char = random.choice(my_list)
+```
+
+To randomize the items in a list, we can use random module:
+```python
+my_list = ['a','v','d']
+random.shuffle(my_list)
 ```
