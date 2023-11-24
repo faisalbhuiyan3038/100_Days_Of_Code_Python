@@ -6,7 +6,7 @@ P.S - You can use the Thonny IDE to visualize each step a python code takes whil
 
 - [Day 4](#day4)
 - [Day 5](#day5)
-
+- [Day 6](#day6)
 
 <a name="day4"></a>
 <h3>Day 4</h3>
@@ -103,9 +103,10 @@ print(f"This will print {num}")
 
 for loops can be run in a range of numbers in python.
 ```python
-for number in range(1,10):
+for number in range(0,10):
     print(number)
-#includes 1 and 10
+#includes 0 and 10: equivalent as below
+for number in range(10):
 ```
 
 you can also make for loops skip a number of steps for every interval.
@@ -132,3 +133,19 @@ To randomize the items in a list, we can use random module:
 my_list = ['a','v','d']
 random.shuffle(my_list)
 ```
+
+<a name="day6"></a>
+
+To create functions in python:
+```python
+def my_function():
+    print("Hello")
+```
+
+reeborg's world website for playing games with python code:
+<a href="https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Alone&url=worlds%2Ftutorial_en%2Falone.json"></a>
+
+In official python documentation, it recommends using spaces over tabs for indentation.
+To make it clear, 4 spaces is 1 indent.
+
+A while loop in simple terms: the loop that will keep on going while a certain condition is true. Once it becomes false, the loop breaks.
